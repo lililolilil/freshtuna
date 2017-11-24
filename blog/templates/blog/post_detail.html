@@ -1,0 +1,25 @@
+{% extends 'blog/base_simple.html' %}
+{% load staticfiles %}
+{% block simpleContent %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+    <p class="bar_title hidden">Post:{{post.title}}</p>
+    {% if user.is_authenticated %}
+    <div class="top_btn_area">
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span>edit</a>
+        <a class="btn btn-default" href=""><span class="glyphicon glyphicon-pencil"></span>delete</a>
+    </div>
+    {% endif %}
+    <div class="post_box row">
+        <div class="post_header col-sm-12">
+	        <h1 class="title col-sm-12">{{ post.title }}</h1>
+    	</div>
+        <div class="contents col-sm-12">{{ post.content|safe }}</div>
+        {% if post.published_date %}
+	            <div class="published_date col-sm-6">
+	                {{ post.published_date }}
+	            </div>
+   		{% endif %}
+
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'blog/base_simple.html' %}
+{% load staticfiles %}
+{% block simpleContent %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+<p class="bar_title hidden">edit:{{post.title}}</p>
+<div class="post_box row">
+	<h1>edit Post</h1>	
+	<form method="POST" class="post-form"  enctype="multipart/form-data">
+		{% csrf_token %} 
+		{% for field in form.visible_fields %}
+		<div class="form-group">
+			{{field.label_tag}}
+			{{field}}
+  		</div>
+  		{% endfor %}
+  		<!-- <div class="form-gruop">
+  		{{ form | safe }}
+  		</div> -->
+		<button type="submit" class="saveBtn btn btn-primary col-sm-12">Save</button >
+	</form>
+</div>
+{% endblock %}

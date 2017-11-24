@@ -1,0 +1,105 @@
+@CHARSET "UTF8";
+.home_container{
+	font-size:14px;
+	width: 100%; 
+	padding:0;  
+	padding-right: 10px;
+	margin-left:0 !important;
+}
+.home_article{ 
+	padding-right: 0 !important; 
+    height: 250px;
+}
+.home_article:nth-child(2n) .article{background-color:#fafce3}
+.home_article:nth-child(2n+1) .article{background-color:#f0fb6e}
+.home_article:nth-child(3n) .article{background-color:#e2f319}
+.home_article:nth-child(4n) .article{background-color:#e2f319}
+.home_article:nth-child(6n) .article{background-color:#f0fb6e}
+.home_article:nth-child(5n) .article{background-color:#fafce3}
+.home_article:nth-child(7n) .article{background-color:#fafce3}
+.home_article:nth-child(8n) .article{background-color:#f0fb6e}
+.home_article:nth-child(9n) .article{background-color:#e2f319}
+
+.home_article .article{
+	width:100%; 
+	height: 240px; 
+	margin:auto;
+	padding: 15px; 
+	position:relative;
+}
+/* .home_article:first-child .article{
+	font-size:1.2em;
+	height:490px;
+} */
+.home_article.in .article{
+	background-color:#ffffff !important;
+	border: 1px solid #008003;
+	border-radius: 0.3em;
+}
+.home_article .tit{
+	font-size: 1.8em;
+	height: 20%; 
+}
+.home_article .hit{
+	font-size: 1.2em;
+	float:right;
+	background-color: #999;
+    border-radius: 1em;
+    color: #fff;
+    padding: 0 10px;
+}
+.home_article .con{
+    height: 60%;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    font-size: 1em;
+    color: #259600;
+    margin: 20px 5px;
+}
+.home_article .date{
+	 text-align: right;
+    font-size: 10px;
+    color: #666;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+    }
+/* 
+.home_article .tit{
+	font-size: 20px;
+	height: 20%; 
+}
+.home_article .hit{
+	font-size: 0.6em;
+	float:right;
+	background-color: #999;
+    border-radius: 1em;
+    color: #fff;
+    padding: 0 10px;
+}
+.home_article .con{
+    height: 60%;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+    font-size: 13px;
+    color: #259600;
+    margin: 20px 5px;
+}
+.home_article .date{
+	 text-align: right;
+    font-size: 0.8em;
+    color: #666;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: -15px;
+} */

@@ -1,0 +1,15 @@
+
+{% extends 'blog/header.html' %}
+{% block content %}
+	<section class="col-sm-3">
+		<div class="user_container">
+			<p class="userName">FreshTuna</p>
+			<p class="userComment">hello~ i'm FreshTuna~!! <br> nice to meet you~! </p>
+		<div>
+	</section>
+
+	<div class="main col-sm-9">
+		{% block mainPostList %}
+		{% endblock %}
+	</div>   
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'blog/base_simple.html' %}
+{% load staticfiles %}
+{% block simpleContent %}
+<link rel="stylesheet" href="{% static 'css/post.css' %}">
+<h2>
+	BoardName.
+</h2>
+<table class="table table-striped table-hover TXTC MT50">
+	<caption class="HIDDEN">It is a bulletin board. The title consists of the author's publication date.
+	</caption>
+	<colgroup>
+		<col width="50%"><col width="20%"><col width="30%">
+	</colgroup>
+	<thead>
+		<tr>
+			<th class="TXTC" scope="col"> title </th>
+			<th class="TXTC" scope="col"> author</th>
+			<th class="TXTC" scope="col"> date </th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for post in page.object_list %}
+		<tr>
+			<td><a class="" href=""><span>{{post.title}}</span> </a></td>
+			<td><span class="author">{{post.author}}</span> </td>
+			<td><span class="date">{{post.published_date}}</span></td>
+		</tr>
+		{% endfor%}
+	</tbody>
+</table>
+
+<p class="bar_title hidden">post_list</p>
+<div class="TXTC"> 
+	<ul class="pagination MAUTO">
+		{% if page.has_previous %}
+		<li class="page-item">
+			<a class="page-link" href="?page=1" aria-label="Previous">
+				<span aria-hidden="true">&laquo;</span>
+				<span class="sr-only">begin</span>
+			</a>
+		</li>   {% endif %}
+
+		{% for n in page.paginator.page_range %}
+		{% if page.number == n %}
+		<li class="page-item active">
+			<span class="page-link">{{ n }}<span class="sr-only">(current)</span></span>
+		</li>
+		{% elif n > page.number|add:'-3' and n < page.number|add:'3' %}
+		<li class="page-item"><a class="page-link" href="?page={{ n }}">{{ n }}</a></li>
+		{% endif %}
+		{% endfor %}
+
+		{% if page.has_next %}
+		<li class="page-item">
+			<a class="page-link" href="?page={{ page.paginator.num_pages }}" aria-label="Next">
+				<span aria-hidden="true">&raquo;</span>
+				<span class="sr-only">end</span>
+			</a>
+		</li>
+		{% endif %}   
+
+	</ul> 
+</div>
+{% endblock %}

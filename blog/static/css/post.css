@@ -1,0 +1,43 @@
+@CHARSET "UTF8";
+
+.note-toolbar{
+	background-color: #faffcd; 
+}
+.note-editor.note-frame {
+    border: 1px solid #008003 !important;
+}
+button[data-original-title:"More Color"]{
+
+}
+.post_box{
+	clear:both;
+	margin:20px 0;
+	padding:10px;
+	background-color:#ffffff !important;
+	border: 1px solid #008003;
+	border-radius: 0.3em;
+	color:#008003;
+	position:relative;
+}
+.post_header{
+	padding: 20px;
+
+}
+.published_date{
+	float:right;
+	text-align: right;
+	position: absolute;
+    bottom: 10px;
+    right: 4px;
+}
+
+.contents{
+	min-height: 300px; 
+	margin-top: 20px; 
+}
+
+.top_btn_area{
+	margin: 20px 10px 10px;
+	display: inline-block;
+    float: right;
+}

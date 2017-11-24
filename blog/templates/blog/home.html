@@ -1,0 +1,35 @@
+{% extends 'blog/base_side.html' %}
+{% load staticfiles %}
+{% block mainPostList %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<script  type="text/javascript" src="{% static 'js/home.js' %}"></script>
+
+<div class="home_container row"> 
+    
+   {% for post in posts %} 
+    <div class="home_article col-sm-4">
+        <div class="article">
+            <a href="{% url 'post_detail' pk=post.pk %}" class="tit"> {{post.title}}</a>
+          
+             <p class="con">{{post.content}}</p>   
+ 
+            <p class="date">{{post.published_date}}</p>
+        </div>
+    </div>
+   {% endfor%}
+</div>
+
+ <script>
+            $(document ).ready(function(e){
+                $(".con").each(function(e){
+                    var $this = $(this);
+                    var text = $this.text(); 
+                    text = text.replace(/<(\/)?([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?[0-9]?(\s)*(\/)?>/gi, "");
+                    text = text.replace(/&([a-zA-Z]*)(\s[a-zA-Z]*=[^>]*)?;/gi, ""); 
+                    $(this).text(text); 
+                })
+                home = new mySite_home(); 
+                home.init(); 
+            }); 
+</script>
+{% endblock %}

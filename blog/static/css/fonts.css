@@ -1,0 +1,114 @@
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+ @font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/NanumGothic/NaumGothicLight.eot');
+  src: url('../fonts/NanumGothic/NaumGothicLight.eot?#iefix') format('embedded-opentype'),
+       /* url('../fonts/NanumGothic/NanumGothicBold.woff2') format('woff2'), */
+       url('../fonts/NanumGothic/NaumGothicLight.woff') format('woff'),
+       url('../fonts/NanumGothic/NaumGothicLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 400;
+  src:url('../fonts/NanumGothic/NanumGothic.eot');
+  src:url('../fonts/NanumGothic/NanumGothic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NanumGothic/NanumGothic.woff') format('woff'),
+      url('../fonts/NanumGothic/NanumGothic.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/NanumGothic/NanumGothicBold.eot');
+  src: url('../fonts/NanumGothic/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+       /* url('../fonts/NanumGothic/NanumGothicBold.woff2') format('woff2'), */
+       url('../fonts/NanumGothic/NanumGothicBold.woff') format('woff'),
+       url('../fonts/NanumGothic/NanumGothicBold.ttf') format('truetype');
+
+}
+@font-face {
+  font-family: 'NanumGothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/NanumGothic/NanumGothicExtraBold.eot');
+  src: url('../fonts/NanumGothic/NanumGothicExtraBold.eot?#iefix') format('embedded-opentype'),
+       /* url('../fonts/NanumGothic/NanumGothicExtraBold.woff2') format('woff2'), */
+       url('../fonts/NanumGothic/NanumGothicExtraBold.woff') format('woff'),
+       url('../fonts/NanumGothic/NanumGothicExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SangSangFlowerRoad';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/flowerRoad/SangSangFlowerRoad.eot');
+  src: url('../fonts/flowerRoad/SangSangFlowerRoad.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/flowerRoad/SangSangFlowerRoad.woff2') format('woff2'), 
+       url('../fonts/flowerRoad/SangSangFlowerRoad.woff') format('woff'),
+       url('../fonts/flowerRoad/SangSangFlowerRoad.svg') format('svg'), 
+       url('../fonts/flowerRoad/SangSangFlowerRoad.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'tvnEnjoyFont';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesL.eot');
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesL.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesL.woff2') format('woff2'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesL.woff') format('woff'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesL.svg') format('svg'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesL.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'tvnEnjoyFont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesM.eot');
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesM.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesM.woff2') format('woff2'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesM.woff') format('woff'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesM.svg') format('svg'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesM.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'tvnEnjoyFont';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesB.eot');
+  src: url('../fonts/tvnEnjoy/tvNEnjoystoriesB.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesB.woff2') format('woff2'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesB.woff') format('woff'),
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesB.svg') format('svg'), 
+       url('../fonts/tvnEnjoy/tvNEnjoystoriesB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'daumFont';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/daum/Daum_Regular.eot');
+  src: url('../fonts/daum/Daum_Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/daum/Daum_Regular.woff2') format('woff2'), 
+       url('../fonts/daum/Daum_Regular.woff') format('woff'),
+       url('../fonts/daum/Daum_Regular.svg') format('svg'), 
+       url('../fonts/daum/Daum_Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'daumFont';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/daum/Daum_SemiBold.eot');
+  src: url('../fonts/daum/Daum_SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/daum/Daum_SemiBold.woff2') format('woff2'), 
+       url('../fonts/daum/Daum_SemiBold.woff') format('woff'),
+       url('../fonts/daum/Daum_SemiBold.svg') format('svg'), 
+       url('../fonts/daum/Daum_SemiBold.ttf') format('truetype');
+}
