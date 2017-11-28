@@ -74,23 +74,38 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
 DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE':'django.db.backends.mysql',
-        'NAME':'blog',#database_name
-        'USER':'blogadmin',#id
-        'PASSWORD':'blogadmin1',#password
-        'HOST':'localhost',
-        'PORT':'3307',
+        'NAME':'freshtuna$blog',#database_name
+        'USER':'freshtuna',#id
+        'PASSWORD':'dusqhd1djr',#password
+        'HOST':'freshtuna.mysql.pythonanywhere-services.com',
+        #'PORT':'3307',
         'OPTIONS': {
             #'read_default_file':os.path.join(BASE_DIR, 'my.cnf'),
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"                       
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
     }
 }
+# DATABASES = {
+#     'default': {
+#         # 'ENGINE': 'django.db.backends.sqlite3',
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME':'blog',#database_name
+#         'USER':'blogadmin',#id
+#         'PASSWORD':'blogadmin1',#password
+#         'HOST':'localhost',
+#         'PORT':'3307',
+#         'OPTIONS': {
+#             #'read_default_file':os.path.join(BASE_DIR, 'my.cnf'),
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"                       
+#         }
+#     }
+# }
 
 
 # Password validation
