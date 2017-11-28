@@ -77,8 +77,18 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'blog',#database_name
+        'USER':'blogadmin',#id
+        'PASSWORD':'blogadmin1',#password
+        'HOST':'localhost',
+        'PORT':'3307',
+        'OPTIONS': {
+            #'read_default_file':os.path.join(BASE_DIR, 'my.cnf'),
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"                       
+        }
     }
 }
 
